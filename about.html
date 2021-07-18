@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <header id="navbar">
+          <h2 class="logo">BOOTCAMP</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </header>
+        <div class="content">
+          <div class="bannerText">
+            <div class="active">
+              <h1>Bootcamp</h1>
+              <hr />
+              <p>
+                Disini Saya Sudah Menyelesaikan Beberapa Tugas Antara Lain,Yaitu
+                : <br />
+                <br />
+                ===> Add Data <br />
+                ===> Input Data <br />
+                ===> Save Data <br />
+                ===> Search Data <br />
+                ===> Edit Data <br />
+                ===> Delete Data <br />
+                ===> Pagination <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="label">
+      <button class="btn first" onclick="addRow()">Add New</button>
+      <input
+        type="text"
+        id="myInput"
+        name="search"
+        onkeyup="filterRow(this)"
+        placeholder="Search for names.."
+      />
+
+      <table width="100%" border="1" cellpadding="15px">
+        <thead>
+          <tr>
+            <th width="30px">No</th>
+            <th width="450px">Name</th>
+            <th width="150px">Pekerjaan</th>
+            <th width="150px">Kota</th>
+            <th width="20px" colspan="2">Action</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="pagination"></div>
+    </section>
+    <footer>Bootcamp G2 Academy | Class Bootcamp Mei 2021</footer>
+    <script src="./about.js"></script>
+  </body>
+</html>
